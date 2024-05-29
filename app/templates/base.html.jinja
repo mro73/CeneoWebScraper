@@ -37,33 +37,18 @@
               </div>
           </div>
           <div class="col py-3">
-   
-    {% block content %}
+
+
+    
             <!-- Nagłówek -->
     <header>
       <!-- Navbar -->
-      <nav data-mdb-navbar-init class="navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <button
-            data-mdb-collapse-init
-            class="navbar-toggler"
-            type="button"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01"></div>
-        </div>
-      </nav>
-      <div class="p-5 text-center bg-body-transparent">
-        <h1 class="mb-3">Ceneo.pl Web Scraper</h1>
+      <div class="p-5 text-center bg-body-transparent">              
+        <h1 class="mb-3">{% block title %}Ceneo.pl Web Scraper{% endblock title %}</h1>
       </div>
     </header>
             <!-- Nagłówek -->
-
+{% block content %}
             <!-- Tekst -->
     <div class="container">
       <div class="container text-center">

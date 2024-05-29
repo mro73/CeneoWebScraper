@@ -1,4 +1,21 @@
 {% extends "base.html.jinja" %}
+{% block title %}
+Ekstrakcja opinii o produkcie
+{% endblock title %}
 {% block content %}
-<p>Tu znajdą się opinie.</p>
+{% if error is defined %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong><i class="bi bi-exclamation-diamond-fill"></i> Uwaga!</strong> {{error}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endif %}
+<form class="container mt-3 mb-3" method="POST">
+  <div class="form-group">
+    <label for="product_id">Kod produktu:</label>
+    <input type="text" name="product_id" id="product_id" class="form-control" aria-describedby="product_idHelpInLine" placeholder="ID" required>
+  <small id="product_idHelpInLine" class="form-text text-muted">Kod produktu musi zawierać 5-10 cyfr.</small>
+  </div>
+<p></p>
+  <button type="submit" class="btn btn-primary">Pobierz</button>
+</form>
 {% endblock %}
