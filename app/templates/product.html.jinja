@@ -1,7 +1,67 @@
 {% extends "base.html.jinja" %}
 {% block title %}
-Opis aplikacji
+Opinie o produkcie
 {% endblock title %}
 {% block content %}
-<p>Tu znajdą się produkty.</p>
+<table class="table table-striped table-hover table-bordered table-sm">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Rekomendacja</th>
+      <th scope="col">Liczba gwiazdek</th>
+      <th scope="col">Opinia</th>
+      <th scope="col">Zalety</th>
+      <th scope="col">Wady</th>
+      <th scope="col">Data opinii</th>
+      <th scope="col">Data zakupu</th>
+      <th scope="col">Przydatne</th>
+      <th scope="col">Nieprzydatne</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">18324546</th>
+      <td>p...0</td>
+      <td></td>
+      <td>5/5</td>
+      <td>"Świetny. Lepszy np od Samsunga A53."</td>
+      <td></td>
+      <td></td>
+      <td>2024-03-23 11:02:37</td>
+      <td></td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">18518890</th>
+      <td>k...i</td>
+      <td></td>
+      <td>5/5</td>
+      <td>"Jestem bardzo zadowolony.\nPOCO X6 pro 5g rewelacyjny.\nŚmiga ino wicher."</td>
+      <td>            "czas pracy na baterii",
+            "funkcjonalność",
+            "łatwość obsługi",
+            "wygląd"</td>
+      <td></td>
+      <td>2024-01-22 09:22:03</td>
+      <td></td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">18399434</th>
+      <td>r...i</td>
+      <td></td>
+      <td>4/5</td>
+      <td>"wszystkie oki"</td>
+      <td></td>
+      <td></td>
+      <td>2024-02-14 19:55:50</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock %}
